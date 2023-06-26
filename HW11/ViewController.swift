@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+   
     // MARK: - UI Elements
     
     private lazy var loginLabel: UILabel = {
@@ -172,7 +173,7 @@ class ViewController: UIViewController {
     }()
 
     private lazy var stackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [accountLabel, signUpButton])
+        let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.spacing = 5
         stackView.distribution = .equalSpacing
@@ -207,6 +208,8 @@ class ViewController: UIViewController {
         view.addSubview(twitterButton)
         view.addSubview(facebookButton)
         view.addSubview(stackView)
+        stackView.addArrangedSubview(accountLabel)
+        stackView.addArrangedSubview(signUpButton)
     }
     
     private func setupLayout() {

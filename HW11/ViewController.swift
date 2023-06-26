@@ -214,52 +214,52 @@ class ViewController: UIViewController {
         let width = view.bounds.width
 
         NSLayoutConstraint.activate([
-        loginLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        loginLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: height * 0.11),
+            loginLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            loginLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: height * 0.11),
             
-        loginView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: width * 0.12),
-        loginView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -width * 0.12),
-        loginView.topAnchor.constraint(equalTo: loginLabel.bottomAnchor, constant: height * 0.05),
-        loginView.heightAnchor.constraint(equalToConstant: height * 0.06),
-
-        passwordView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: width * 0.12),
-        passwordView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -width * 0.12),
-        passwordView.topAnchor.constraint(equalTo: loginView.bottomAnchor, constant: height * 0.02),
-        passwordView.heightAnchor.constraint(equalToConstant: height * 0.06),
-        
-        button.leftAnchor.constraint(equalTo: view.leftAnchor, constant: width * 0.12),
-        button.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -width * 0.12),
-        button.topAnchor.constraint(equalTo: passwordView.bottomAnchor, constant: height * 0.05),
-        button.heightAnchor.constraint(equalToConstant: height * 0.06),
-        
-        forgotPasswordButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        forgotPasswordButton.topAnchor.constraint(equalTo: button.bottomAnchor, constant: height * 0.015),
-        
-        connectWithLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        connectWithLabel.topAnchor.constraint(equalTo: view.bottomAnchor, constant: -height * 0.3),
-        
-        lineOne.topAnchor.constraint(equalTo: view.bottomAnchor, constant: (-height * 0.3) + 12),
-        lineOne.heightAnchor.constraint(equalToConstant: 1),
-        lineOne.rightAnchor.constraint(equalTo: connectWithLabel.leftAnchor, constant: -4),
-        lineOne.leftAnchor.constraint(equalTo: view.leftAnchor, constant: width * 0.09),
-        
-        lineTwo.topAnchor.constraint(equalTo: view.bottomAnchor, constant: (-height * 0.3) + 12),
-        lineTwo.heightAnchor.constraint(equalToConstant: 1),
-        lineTwo.leftAnchor.constraint(equalTo: connectWithLabel.rightAnchor, constant: 4),
-        lineTwo.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -width * 0.09),
-        
-        twitterButton.topAnchor.constraint(equalTo: lineTwo.bottomAnchor, constant: height * 0.05),
-        twitterButton.widthAnchor.constraint(equalToConstant: (width * 0.41) - 5),
-        twitterButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -width * 0.09),
-        twitterButton.heightAnchor.constraint(equalToConstant: height * 0.05),
-        
-        facebookButton.topAnchor.constraint(equalTo: lineTwo.bottomAnchor, constant: height * 0.05),
-        facebookButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: width * 0.09),
-        facebookButton.widthAnchor.constraint(equalToConstant: (width * 0.41) - 5),
-        facebookButton.heightAnchor.constraint(equalToConstant: height * 0.05),
-        
-        stackView.topAnchor.constraint(equalTo: view.bottomAnchor, constant: -height * 0.1),
-        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            loginView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: width * 0.12),
+            loginView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -width * 0.12),
+            loginView.topAnchor.constraint(equalTo: loginLabel.bottomAnchor, constant: height * 0.05),
+            loginView.heightAnchor.constraint(equalToConstant: height * 0.06),
+            
+            passwordView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: width * 0.12),
+            passwordView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -width * 0.12),
+            passwordView.topAnchor.constraint(equalTo: loginView.bottomAnchor, constant: height * 0.02),
+            passwordView.heightAnchor.constraint(equalToConstant: height * 0.06),
+            
+            button.leftAnchor.constraint(equalTo: view.leftAnchor, constant: width * 0.12),
+            button.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -width * 0.12),
+            button.topAnchor.constraint(equalTo: passwordView.bottomAnchor, constant: height * 0.05),
+            button.heightAnchor.constraint(equalToConstant: height * 0.06),
+            
+            forgotPasswordButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            forgotPasswordButton.topAnchor.constraint(equalTo: button.bottomAnchor, constant: height * 0.015),
+            
+            connectWithLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            connectWithLabel.topAnchor.constraint(equalTo: view.bottomAnchor, constant: -height * 0.3),
+            
+            lineOne.topAnchor.constraint(equalTo: view.bottomAnchor, constant: (-height * 0.3) + 12),
+            lineOne.heightAnchor.constraint(equalToConstant: 1),
+            lineOne.rightAnchor.constraint(equalTo: connectWithLabel.leftAnchor, constant: -4),
+            lineOne.leftAnchor.constraint(equalTo: view.leftAnchor, constant: width * 0.09),
+            
+            lineTwo.topAnchor.constraint(equalTo: view.bottomAnchor, constant: (-height * 0.3) + 12),
+            lineTwo.heightAnchor.constraint(equalToConstant: 1),
+            lineTwo.leftAnchor.constraint(equalTo: connectWithLabel.rightAnchor, constant: 4),
+            lineTwo.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -width * 0.09),
+            
+            twitterButton.topAnchor.constraint(equalTo: lineTwo.bottomAnchor, constant: height * 0.05),
+            twitterButton.widthAnchor.constraint(equalToConstant: (width * 0.41) - 5),
+            twitterButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -width * 0.09),
+            twitterButton.heightAnchor.constraint(equalToConstant: height * 0.05),
+            
+            facebookButton.topAnchor.constraint(equalTo: lineTwo.bottomAnchor, constant: height * 0.05),
+            facebookButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: width * 0.09),
+            facebookButton.widthAnchor.constraint(equalToConstant: (width * 0.41) - 5),
+            facebookButton.heightAnchor.constraint(equalToConstant: height * 0.05),
+            
+            stackView.topAnchor.constraint(equalTo: view.bottomAnchor, constant: -height * 0.1),
+            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
 }

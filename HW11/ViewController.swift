@@ -208,6 +208,8 @@ class ViewController: UIViewController {
         view.addSubview(twitterButton)
         view.addSubview(facebookButton)
         view.addSubview(stackView)
+        stackView.addArrangedSubview(accountLabel)
+        stackView.addArrangedSubview(signUpButton)
     }
     
     private func setupLayout() {

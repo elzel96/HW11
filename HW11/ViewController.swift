@@ -173,7 +173,7 @@ class ViewController: UIViewController {
     }()
 
     private lazy var stackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [accountLabel, signUpButton])
+        let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.spacing = 5
         stackView.distribution = .equalSpacing
